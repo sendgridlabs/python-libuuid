@@ -40,11 +40,15 @@ except ImportError:
     print("building without Cython")
     source_extension = ".c"
 
+if os.sys.platform == 'darwin':
+    libraries = ['System']
+else:
+    libraries = ['uuid']
 
 ext_modules = [
     Extension('libuuid._uuid',
               sources=['libuuid/_uuid' + source_extension],
-              libraries=['uuid'])
+              libraries=libraries)
     ]
 
 
