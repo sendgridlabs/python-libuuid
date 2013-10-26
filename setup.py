@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """C Extension for faster UUID generation using libuuid."""
 
-__version_info__ = (0, 9, 0)
+__version_info__ = (0, 9, 0, "sg")
 __version__ = ".".join(map(str, __version_info__))
 __author__ = "Daniel Lundin"
 __contact__ = "dln@eintr.org"
