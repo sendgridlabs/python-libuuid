@@ -43,7 +43,7 @@ except ImportError:
 if os.sys.platform == 'darwin':
     libraries = ['System']
 else:
-    libraries = ['uuid']
+    libraries = ['libuuid']
 
 ext_modules = [
     Extension('libuuid._uuid',
